@@ -74,7 +74,7 @@ lab1/
 ### 1. Клонування репозиторію
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:mediano11/MLOps-Lab1.git
 cd lab1
 ```
 
@@ -271,7 +271,7 @@ git commit -m "Update dataset"
 dvc push
 
 # Нова машина після clone
-git clone <repo-url> && cd lab1
+git clone git@github.com:mediano11/MLOps-Lab1.git && cd lab1
 pip install -r requirements.txt   # і venv за потреби
 dvc pull
 ```
