@@ -20,12 +20,16 @@ build/
 *.parquet
 *.h5
 
-# Models
+# Models (самі бінарні файли — через DVC)
 *.pkl
 *.joblib
 *.onnx
 models/*.pkl
 models/*.joblib
+# Дозволяємо DVC-метадані та звіти
+!models/*.dvc
+!models/*.json
+!models/*.csv
 
 # MLflow
 mlruns/
