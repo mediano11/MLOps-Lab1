@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files
+*.csv
+*.parquet
+*.h5
+
+# Models
+*.pkl
+*.joblib
+*.onnx
+models/*.pkl
+models/*.joblib
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# DVC — ігноруємо самі дані, але зберігаємо .dvc-метадані та .gitkeep
+/data/raw/*
+!/data/raw/.gitkeep
+!/data/raw/*.dvc
+/data/processed/*
+!/data/processed/.gitkeep
+!/data/processed/*.dvc
+/data/external/*
+!/data/external/.gitkeep
+!/data/external/*.dvc
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
